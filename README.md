@@ -10,24 +10,25 @@ Write a C program to read 3 characters one by one and print the characters in a 
 4.	End the program.
 
 ## PROGRAM:
+```
+#include <stdio.h>
+int main()
+{
+char ch1, ch2, ch3;
+printf("Enter first character: ");
+scanf(" %c", &ch1);
+printf("Enter second character: ");
+scanf(" %c", &ch2);
+printf("Enter third character: ");
+scanf(" %c", &ch3);
+printf("Characters in reverse order: %c %c %c\n", ch3, ch2, ch1);
+return 0;
+}
+```
 
 ## OUTPUT:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot 2025-05-08 114109](https://github.com/user-attachments/assets/a18a8e8a-9600-41f4-ba24-2e8b510a48ef)
 
 ## RESULT:
 Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
@@ -46,17 +47,25 @@ Write a C program to read A values and check whether A is positive number or not
 6.End the program.
 
 # PROGRAM:
+```
+#include <stdio.h>
+int main()
+int A;
+printf("Enter a value: ");
+scanf("%d", &A);
+if (A > 0)
+{
+printf("%d is a positive number.\n", A);
+}
+else
+{
+printf("%d is not a positive number.\n", A);
+}
+return 0;
+}
+```
 
 # OUTPUT:
-
-
-
-
-
-
-
-
-
 
 
 # RESULT:
@@ -80,15 +89,25 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
+```
+#include <stdio.h>
+int main()
+{
+int a,b;
+scanf("%d%d",&a,&b);
+if (a<b)
+{
+printf("Minimum between %d and %d is %d",a,b,a);
+}
+else
+{
+printf("Minimum between %d and %d is %d",a,b,b);
+}
+return 0;
+}
+```
 
 ## OUTPUT:
-
-
-
-
-
-
-
 
 
 ## RESULT:
@@ -111,17 +130,17 @@ Write a C program to check whether the input value is equal to 1 using simple if
 6.	End the program.
 
 ## PROGRAM:
+```
+#include <stdio.h>
+int main(){
+int a;
+scanf("%d",&a);
+if(a==1)
+printf("TRUE");
+}
+```
 
 ## OUTPUT:
-
-
-
-
-
-
-
-
-
 	
 
 ## RESULT:
@@ -147,6 +166,29 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
+```
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+int phy,che,ca,total;
+float per;
+char div[10];
+scanf("%d%d%d",&phy,&che,&ca);
+total = phy+che+ca;
+per = total/3.0;
+if (per>=60)
+strcpy(div,"First");
+else if (per<60&&per>=48)
+strcpy(div,"Second");
+else if (per<48&&per>=36)
+strcpy(div,"Pass");
+else
+strcpy(div,"Fail");
+printf("Total Marks = %d\nPercentage = %5.2f\nDivision = %s\n",total
+return 0;
+}
+```
 
 ## OUTPUT:
 
